@@ -434,15 +434,15 @@ elif page == "💧 Feed Water Analysis":
 
 
     uploaded_file = st.file_uploader(
-        "Upload IMS Water Analysis",
+        "Upload Water Analysis",
         type=["xlsx"]
     )
 
-    if st.button("📂 Load IMS Water Analysis"):
+    if st.button("📂 Load Water Analysis"):
 
         if uploaded_file is None:
 
-            st.warning("Please select IMS Excel file")
+            st.warning("Please select Excel file")
 
         else:
 
@@ -583,7 +583,7 @@ elif page == "💧 Feed Water Analysis":
             #######################################################
 
             st.success(
-                "✅ IMS Water Analysis Loaded Successfully"
+                "✅ Water Analysis Loaded Successfully"
             )
 
             st.write(df.head(30))
